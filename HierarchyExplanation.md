@@ -1,13 +1,157 @@
-# DREAMs Learning Object Course Hierarchy Example
+## Overall Struture
+```
+DREAMs Learning Object (Course)
+|─── Instructors Manual File
+|─── VM Installation Documentation
+|─── Topic 1 Learning Object (Module)
+|     |─── Assessment File
+|     |─── PowerPoint File
+|     |─── Level 1 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 2 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 3 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|─── Topic 2 Learning Object (Module)
+|     |─── Assessment File
+|     |─── PowerPoint File
+|     |─── Level 1 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 2 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 3 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|─── Topic 3 Learning Object (Module)
+|     |─── Assessment File
+|     |─── PowerPoint File
+|     |─── Level 1 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 2 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 3 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|─── Topic 4 Learning Object (Module)
+|     |─── Assessment File
+|     |─── PowerPoint File
+|     |─── Level 1 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 2 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 3 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|─── Topic 5 Learning Object (Module)
+|     |─── Assessment File
+|     |─── PowerPoint File
+|     |─── Level 1 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 2 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 3 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|─── Topic 6 Learning Object (Module)
+|     |─── Assessment File
+|     |─── PowerPoint File
+|     |─── Level 1 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 2 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 3 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|─── Topic 7 Learning Object (Module)
+|     |─── Assessment File
+|     |─── PowerPoint File
+|     |─── Level 1 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 2 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 3 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|─── Topic 8 Learning Object (Module)
+|     |─── Assessment File
+|     |─── PowerPoint File
+|     |─── Level 1 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 2 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 3 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|─── Topic 9 Learning Object (Module)
+|     |─── Assessment File
+|     |─── PowerPoint File
+|     |─── Level 1 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 2 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|     |─── Level 3 Learning Object (Micromodule)
+|     |     └── Lab Module
+|     |     └── Worksheet
+|     |     └── Worksheet Solution
+|─── Topic 10 Learning Object (Module)
+      |─── Assessment File
+      |─── PowerPoint File
+      |─── Level 1 Learning Object (Micromodule)
+      |     └── Lab Module
+      |     └── Worksheet
+      |     └── Worksheet Solution
+      |─── Level 2 Learning Object (Micromodule)
+      |     └── Lab Module
+      |     └── Worksheet
+      |     └── Worksheet Solution
+      |─── Level 3 Learning Object (Micromodule)
+      |     └── Lab Module
+      |     └── Worksheet
+      |     └── Worksheet Solution
 
-![Screenshot](dreamshierarchy1.png)
-
-One learning object would be the course. It would host the instructors manual and VM installation software. 
-
-![Screenshot](dreamshierarchy2.png)
-
-There would be a learning object for each topic, represented by a unit or module depending on size of the topic. It would host the topic's powerpoint lectures and assessments. Each topic object is a child to the course object.
-
-![Screenshot](dreamshierarchy3.png)
-
-There would be a learning object for each level such as levels 1 through 3. It would host the lab module, the worksheek, and the worksheet solutions. Each level is a child to its respective topic object.
+```
